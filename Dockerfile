@@ -20,5 +20,5 @@ ENV TIMEOUT     60
 EXPOSE $SERVER_PORT/tcp
 EXPOSE $SERVER_PORT/udp
  
-CMD /bin/shadowsocks-server -p $SERVER_PORT -k $PASSWORD -m  $METHOD -t  $TIMEOUT -u
+CMD /shadowsocks-server -p $SERVER_PORT -k $PASSWORD -m  $METHOD -t  $TIMEOUT -u
 
